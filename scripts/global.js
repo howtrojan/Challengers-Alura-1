@@ -62,3 +62,13 @@ function copiar() {
     document.execCommand("copy");
     alert("Texto copiado para a área de transferência!");
 }
+
+function removerAcentos(texto) {
+    return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+}
+
+function validarEntrada() {
+    let campoInput = document.getElementById("mensagemInput");
+    campoInput.value = removerAcentos(campoInput.value.toLowerCase());
+}
+
