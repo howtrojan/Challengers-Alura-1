@@ -14,9 +14,8 @@
           class="text-resolve"
           id="resultado"
           rows="4"
-          cols="50"
-          readonly
-          placeholder="Nenhuma mensagem encontrada"
+          cols="50"          
+          placeholder="Digite seu texto aqui!"
         ></textarea>      
 
         <div class="rodape-aviso">
@@ -37,7 +36,7 @@
       
 
       <section class="msg-input">
-        <textarea class="text-input" type="text" id="mensagemInput" oninput="validarEntrada()" placeholder="Digite seu texto aqui!"></textarea>
+        <textarea class="text-input" type="text" id="mensagemInput" oninput="validarEntrada()" placeholder="Nenhuma mensagem..." readonly></textarea>
 
         <button class="btn-copy" onclick="copiar()">Copiar</button>
       </section>

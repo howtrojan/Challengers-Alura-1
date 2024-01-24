@@ -1,5 +1,5 @@
 function criptografar() {
-    let mensagemOriginal = document.getElementById("mensagemInput").value.toLowerCase();
+    let mensagemOriginal = document.getElementById("resultado").value.toLowerCase();
     let mensagemCriptografada = "";
 
     for (let i = 0; i < mensagemOriginal.length; i++) {
@@ -24,11 +24,11 @@ function criptografar() {
         }
     }
 
-    document.getElementById("resultado").value = mensagemCriptografada;
+    document.getElementById("mensagemInput").value = mensagemCriptografada;
 }
 
 function descriptografar() {
-    let mensagemCriptografada = document.getElementById("mensagemInput").value.toLowerCase();
+    let mensagemCriptografada = document.getElementById("resultado").value.toLowerCase();
     let mensagemOriginal = "";
 
     for (let i = 0; i < mensagemCriptografada.length;) {
@@ -53,11 +53,11 @@ function descriptografar() {
         }
     }
 
-    document.getElementById("resultado").value = mensagemOriginal;
+    document.getElementById("mensagemInput").value = mensagemOriginal;
 }
 
 function copiar() {
-    let resultado = document.getElementById("resultado");
+    let resultado = document.getElementById("mensagemInput");
     resultado.select();
     document.execCommand("copy");
     alert("Texto copiado para a área de transferência!");
@@ -68,7 +68,7 @@ function removerAcentos(texto) {
 }
 
 function validarEntrada() {
-    let campoInput = document.getElementById("mensagemInput");
+    let campoInput = document.getElementById("resultado");
     campoInput.value = removerAcentos(campoInput.value.toLowerCase());
 }
 
