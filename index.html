@@ -16,7 +16,8 @@
           rows="4"
           cols="50"
           readonly
-        ></textarea>
+          placeholder="Nenhuma mensagem encontrada"
+        ></textarea>      
 
         <div class="rodape-aviso">
           <img src="./assets/exclamacao.svg" alt="Simbolo Exclamação" />
@@ -36,7 +37,7 @@
       
 
       <section class="msg-input">
-        <textarea class="text-input" type="text" id="mensagemInput" oninput="validarEntrada()"></textarea>
+        <textarea class="text-input" type="text" id="mensagemInput" oninput="validarEntrada()" placeholder="Digite seu texto aqui!"></textarea>
 
         <button class="btn-copy" onclick="copiar()">Copiar</button>
       </section>
