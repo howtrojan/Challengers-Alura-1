@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/global.css" />
+    <title>Decodificador</title>
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="./assets/titulo.svg" alt="Logo do site" />
+      <section>
+        <textarea
+          class="text-resolve"
+          id="resultado"
+          rows="4"
+          cols="50"
+          readonly
+        ></textarea>
+
+        <div class="rodape-aviso">
+          <img src="./assets/exclamacao.svg" alt="Simbolo Exclamação" />
+          <p class="aviso">Apenas letras minúsculas e sem acento.</p>
+        </div>
+
+        <section class="buttons">
+            <button class="btn-criptografar" onclick="criptografar()">
+              Criptografar
+            </button>
+            <button class="btn-descriptografar" onclick="descriptografar()">
+              Descriptografar
+            </button>
+          </section>
+      </section>
+
+      
+
+      <section class="msg-input">
+        <textarea class="text-input" type="text" id="mensagemInput"></textarea>
+
+        <button class="btn-copy" onclick="copiar()">Copiar</button>
+      </section>
+    </main>
+
+    <footer class="footer">
+        <p>André Santos Braga</p>
+        <div class="ancoras">
+          <a href="https://github.com/howtrojan" target="_blank">Github</a>
+          <a href="https://www.linkedin.com/in/andresantosbraga/" target="_blank">Linkedin</a>
+        </div>
+      </footer>    
+
+    <script src="./scripts/global.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+:root{
+    --color-primary: #0A3871; 
+    --background-color: #f3f5fc;
+    
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);    
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;    
+    align-items: center; 
+}
+
+.logo{    
+    width: 30.43px;
+    height: 48.03px;
+    margin-left: 1rem;
+    margin-top: 1.49rem;
+}
+
+.text-resolve{    
+    margin: 5rem 1rem 4rem 1rem;
+    resize: none;
+    width: 21.43rem;
+    height: 39rem;
+    font-size: 2rem;
+    line-height: 4rem;
+    color: #0A3871;
+    border: none;
+}
+
+.rodape-aviso{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+    margin-right: 6.68rem;
+}
+
+.aviso{
+    color: #67808E;
+    font-size: 0.75rem;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 1rem;
+    height: 9.87rem;    
+}
+
+.btn-criptografar{
+    background-color: var(--color-primary);
+    color: #FFFFFF;
+    font-size: 1rem;
+    height: 4.18rem;
+    width: 21.43rem;
+    border-radius: 1.5rem;
+    border: var(--color-primary);
+}
+
+.btn-descriptografar{
+    background-color: #FFFFFF;
+    color: var(--color-primary);
+    font-size: 1rem;
+    height: 4.18rem;
+    width: 21.43rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--color-primary); 
+}
+
+.msg-input{
+    display: flex;
+    flex-direction: column;
+    width: 21.43rem;
+    height: 37.18rem;
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    margin: 4rem 1rem 1rem 1rem;
+    
+}
+
+.text-input{
+    margin: 2rem;
+    background-color: #FFFFFF;
+    border: none;
+    color: #495057;
+    width: 17.43rem;
+    height: 27rem;    
+    font-size: 1.5rem;  
+    line-height: 2.25rem;   
+    word-break: break-all;
+    resize: none;
+}
+
+.btn-copy{
+    background-color: #FFFFFF;
+    color: var(--color-primary);
+    font-size: 1rem;
+    height: 4.18rem;
+    width: 17.43rem;
+    border-radius: 1.5rem;
+    border: 1px solid var(--color-primary); 
+    margin: 2rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-primary) !important;
+    color: #FFFFFF;
+    height: 4.18rem;
+    min-width: 23.75rem;
+    width: 100%;
+    margin-top: auto;   
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 0;      
+}
+
+.footer p {
+    background-color: var(--color-primary); 
+    margin: 0;   
+    font-size: 1.5rem; 
+}
+
+.footer a {
+    background-color: var(--color-primary); 
+    margin: 0;   
+    font-size: 0.75rem; 
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+.ancoras{
+    background-color: var(--color-primary);     
+}
+
+@media screen and (min-width: 768px) {   
+    .logo{
+        margin-left: 2.5rem;
+    }
+    
+    .text-resolve {   
+        width: 43rem; 
+        height: 18rem;   
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;    
+    }
+
+    .buttons{
+        flex-direction: row;
+    }
+
+    .rodape-aviso{
+        margin-bottom: 1rem;  
+        margin-left: 2.5rem;      
+    }
+
+    
+
+    .buttons{
+        height: 4.18rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .btn-criptografar{
+        width: 20.75rem;
+    }
+
+    .btn-descriptografar{
+        width: 20.75rem;
+    }
+
+    .msg-input{
+        width: 43rem;
+        margin-bottom: 2.5rem;
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
+
+    .text-input{
+        width: 39rem;
+    }
+
+    .btn-copy{
+        width: 39rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    main{
+        display: flex;
+    }
+
+    .logo {
+        margin-top: 40px;
+        width: 7rem;
+        height: 2.88rem;
+    }
+
+    .text-resolve {
+        width: 37.33rem;
+        height: 16rem;
+        margin-top: 168px;
+        margin-left: 3.75rem;
+        margin-right: 1.25rem;
+    }
+
+    .buttons {
+        margin-top: 16px;
+        margin-bottom: 72px;
+    }
+
+    .rodape-aviso {
+        margin-top: 395px;
+    }
+
+    .msg-input {
+        margin-top: 40px;
+        width: 400px;
+        height: 980px;
+    }
+
+    .text-input {
+        margin: 32px;
+        width: 336px;
+        height: 781px;
+    }
+
+    .btn-copy {
+        width: 336px;
+        margin-bottom: 32px;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: row;        
+    }
+   
+
+    .footer p {
+        margin: 0 2rem 0 0;
+        font-size: 1.5rem;
+    }
+
+    .footer a {
+        margin: 0;
+        font-size: 0.75rem;
+    }
+
+    .ancoras {
+        margin-left: 2rem;
+    }
+}
+
+
