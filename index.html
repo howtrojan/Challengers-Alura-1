@@ -15,6 +15,7 @@
           id="resultado"
           rows="4"
           cols="50"          
+          oninput="validarEntrada()"
           placeholder="Digite seu texto aqui!"
         ></textarea>      
 
@@ -36,7 +37,7 @@
       
 
       <section class="msg-input">
-        <textarea class="text-input" type="text" id="mensagemInput" oninput="validarEntrada()" placeholder="Nenhuma mensagem..." readonly></textarea>
+        <textarea class="text-input" type="text" id="mensagemInput" placeholder="Nenhuma mensagem..." readonly></textarea>
 
         <button class="btn-copy" onclick="copiar()">Copiar</button>
       </section>
