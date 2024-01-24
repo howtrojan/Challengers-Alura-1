@@ -64,7 +64,7 @@ function copiar() {
 }
 
 function removerAcentos(texto) {
-    return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+    return texto.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[áàãâäéèëêíìïîóòöõôúùüû´´´´´```````^^^^^^^^~~~~~~~~]/gi, '');
 }
 
 function validarEntrada() {
